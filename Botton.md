@@ -102,8 +102,17 @@ a{
   font:Roboto;
   color: #03e9f4;
   text-decoration:none;
-  z-index:0;
+  
 }
+a:hover
+{
+  color: #ccc;
+  text-shadow: 0 0 5px #f2f7f5,
+              0 0 25px #f2f7f5,
+              0 0 50px #050505,
+              0 0 100px #050505;
+}
+
 
 
 ```
