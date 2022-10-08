@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+}
+
+.brownSugar {
+    height: 40px;
+    width: 240px;
+    -moz-border-radius: 50px;
+    border-radius: 15% 15% 0% 0%;
+    background-color: #ECAA7D;
+    border-top: 30px solid #DB9E74;
+}
+
+.pudding {
+    position: relative;
+    height: 200px;
+    width: 240px;
+    background-color: #fac39d;
+    border-radius: 0% 0% 30px 30px;
+
+}
+
+.shape {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    width: 15px;
+    height: 15px;
+    background-color: #f79071;
+    transform: rotate(-40deg);
+    border-radius: 50% 50% 50% 50%;
+}
+
+.shape2 {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    width: 15px;
+    height: 15px;
+    background-color: #ECAA7D;
+    transform: rotate(-40deg);
+    border-radius: 100%;
+}
+
+.face {
+    position: absolute;
+    bottom: 0;
+    height: 165px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.eyes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 145px;
+}
+
+.left-eye,
+.right-eye {
+    position: relative;
+    background-color: #eb5026;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+}
+
+.left-eye::before,
+.right-eye::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 5px;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.mouth {
+    position: relative;
+    height: 25px;
+    width: 75px;
+    background-color: #eb5026;
+    border-radius: 10px 10px 30px 30px;
+    margin-top: 18px;
+}
+
+.mouth::after {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    background-color: #F982BF;
+    left: 24px;
+    top: 18px;
+    border-radius: 3px 3px 50% 50%;
+}
+
+.p-1 {
+    height: 100px;
+    width: 80px;
+    background-color: #fac39d;
+    position: absolute;
+    bottom: 0px;
+    left: 50px;
+    transform: rotate(30deg);
+    border-radius: 0 0 50px 50px;
+}
+
+.p-2 {
+    height: 100px;
+    width: 80px;
+    background-color: #fac39d;
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
+    transform: rotate(-30deg);
+    border-radius: 0 0 50px 50px;
+}
