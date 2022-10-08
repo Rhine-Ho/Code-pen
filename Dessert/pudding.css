@@ -4,29 +4,66 @@
     box-sizing: border-box;
 }
 
-.container {
+#container {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #FFF;
+    background-color: #fff;
+
 }
 
-.cream {
-    top: 40px;
-    right: 30px;
-    width: 15px;
-    height: 15px;
+#plate {
+    width: 320px;
+    height: 60px;
+    border-radius: 100%;
+    border: 3px solid #000;
+    background: #fff;
+
+    opacity: 10px;
+
+}
+
+#shadow {
+    width: 300px;
+    height: 20px;
+    border-radius: 100%;
+    background: #555;
+    filter: blur(3px);
+}
+
+#cherry {
+    width: 40px;
+    height: 40px;
     background-color: #ECAA7D;
     transform: rotate(-40deg);
     border-radius: 100%;
-    background-color: #e82c3c;
+    border: 1.5px solid #e81c2d;
+    background-color: #e8515e;
+    box-shadow: inset -3px -7px 4px 7px #e81c2d;
 
 }
 
-.cream1 {
-    top: 40px;
+butt {
+    border-radius: 100%;
+    border: 3px solid transparent;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    width: 50px;
+    height: 50px;
+    top: 11px;
+    left: 129px;
+    transform: rotate(15deg);
+}
+
+.butt .botton {
+    top: 20px;
+    left: 114px;
+    transform: rotate(-5deg);
+}
+
+.cream {
     right: 30px;
     width: 15px;
     height: 15px;
@@ -37,8 +74,7 @@
     display: flex;
 }
 
-.c1-1 {
-    top: 40px;
+.cream .c1-1 {
     right: 30px;
     width: 15px;
     height: 15px;
@@ -47,26 +83,31 @@
     border-radius: 100%;
 }
 
-.c1-2 {
-    top: 40px;
+.cream .c1-2 {
     right: 30px;
     width: 15px;
     height: 15px;
-    background-color: #ECAA7D;
+    background-color: #fae2d2;
     transform: rotate(-40deg);
     border-radius: 100%;
-    background-color: #e82c3c;
 }
 
-.c1-3 {
-    top: 40px;
+.cream .c1-3 {
     right: 30px;
     width: 15px;
     height: 15px;
     background-color: #ECAA7D;
     transform: rotate(-40deg);
     border-radius: 100%;
-    background-color: #e82c3c;
+
+}
+
+.brownSugar {
+    height: 40px;
+    width: 240px;
+    border-radius: 15% 15% 0% 0%;
+    background-color: #ECAA7D;
+    border-top: 30px solid #DB9E74;
 }
 
 .pudding {
@@ -74,29 +115,28 @@
     height: 200px;
     width: 240px;
     background-color: #fac39d;
-    border-radius: 0% 0% 30px 30px;
 
 }
 
 .shape {
     position: absolute;
-    top: 40px;
-    right: 30px;
-    width: 15px;
-    height: 15px;
-    background-color: #f79071;
-    transform: rotate(-40deg);
-    border-radius: 50% 50% 50% 50%;
+    display: flex;
+    top: 1px;
+    right: 20px;
+    width: 8px;
+    height: 50px;
+    background-color: #ECAA7D;
+    transform: rotate(-45deg);
+    border-radius: 70px 220px 220px 50px;
 }
 
-.shape2 {
-    position: absolute;
-    top: 40px;
-    right: 30px;
+.shape .s1 {
+    position: relative;
+    top: 100px;
     width: 15px;
     height: 15px;
     background-color: #ECAA7D;
-    transform: rotate(-40deg);
+    transform: rotate(-30deg);
     border-radius: 100%;
 }
 
@@ -144,9 +184,10 @@
     position: relative;
     height: 25px;
     width: 75px;
-    background-color: #eb5026;
+    background-color: #e81c2d;
     border-radius: 10px 10px 30px 30px;
     margin-top: 18px;
+    border-radius: inset -4px 1px 0 21px #eb5026;
 }
 
 .mouth::after {
@@ -160,24 +201,25 @@
     border-radius: 3px 3px 50% 50%;
 }
 
-.p-1 {
-    height: 100px;
-    width: 80px;
+
+.wing {
+    height: 173px;
+    width: 40px;
     background-color: #fac39d;
     position: absolute;
     bottom: 0px;
-    left: 50px;
-    transform: rotate(30deg);
-    border-radius: 0 0 50px 50px;
+    right: 208px;
+    transform: rotate(5deg);
+    border-radius: 0 0 5px 3px;
 }
 
-.p-2 {
-    height: 100px;
-    width: 80px;
+.wing ::after {
+    height: 173px;
+    width: 40px;
     background-color: #fac39d;
-    position: absolute;
+    position: relative;
     bottom: 0px;
-    right: 50px;
-    transform: rotate(-30deg);
-    border-radius: 0 0 50px 50px;
+    left: 95%;
+    transform: rotate(-5deg);
+    border-radius: 0 0 5px 0px;
 }
