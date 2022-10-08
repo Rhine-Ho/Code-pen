@@ -13,13 +13,60 @@
     background-color: #FFF;
 }
 
-.brownSugar {
-    height: 40px;
-    width: 240px;
-    -moz-border-radius: 50px;
-    border-radius: 15% 15% 0% 0%;
+.cream {
+    top: 40px;
+    right: 30px;
+    width: 15px;
+    height: 15px;
     background-color: #ECAA7D;
-    border-top: 30px solid #DB9E74;
+    transform: rotate(-40deg);
+    border-radius: 100%;
+    background-color: #e82c3c;
+
+}
+
+.cream1 {
+    top: 40px;
+    right: 30px;
+    width: 15px;
+    height: 15px;
+    background-color: #ECAA7D;
+    transform: rotate(-40deg);
+    border-radius: 100%;
+    background-color: #e82c3c;
+    display: flex;
+}
+
+.c1-1 {
+    top: 40px;
+    right: 30px;
+    width: 15px;
+    height: 15px;
+    background-color: #fae2d2;
+    transform: rotate(-40deg);
+    border-radius: 100%;
+}
+
+.c1-2 {
+    top: 40px;
+    right: 30px;
+    width: 15px;
+    height: 15px;
+    background-color: #ECAA7D;
+    transform: rotate(-40deg);
+    border-radius: 100%;
+    background-color: #e82c3c;
+}
+
+.c1-3 {
+    top: 40px;
+    right: 30px;
+    width: 15px;
+    height: 15px;
+    background-color: #ECAA7D;
+    transform: rotate(-40deg);
+    border-radius: 100%;
+    background-color: #e82c3c;
 }
 
 .pudding {
