@@ -43,8 +43,21 @@ body{
   <div class="cursor pointed">
     <span>Hello<br>World.</span>
   </div>
-  <script>
 
+  
+  <script>
+const cursorPointed = document.querySelector('.pointed');
+
+const moveCursor = (e)=> {
+  const mouseY = e.clientY;
+  const mouseX = e.clientX;
+   
+  
+  cursorPointed.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+ 
+}
+
+window.addEventListener('mousemove', moveCursor)
   </script>
 
 </body>
